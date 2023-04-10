@@ -22,31 +22,31 @@
         mentoria 
       </p>
     </header>
-    <form action="">
+    <form id="my-form-mentor">
       <fieldset>
         <legend class="legend">Informações pessoais</legend>
         <div class="input-wrapper-name">
 
           <div class="name">
-            <label for="">Nome</label>
-            <input type="text">
+            <label for="mentoring-name">Nome</label>
+            <input id="mentoring-name"type="text" required>
           </div>
 
           <div class="surname">
-            <label for="">Sobrenome</label>
-            <input type="text">
+            <label for="mentoring-surname">Sobrenome</label>
+            <input id="mentoring-surname" type="text" required>
           </div>
 
         </div>
 
         <div class="input-wrapper">
-          <label for="">Email <span>(digite um email válido)</span></label>
-          <input type="email">
+          <label for="mentoring-email">Email <span>(digite um email válido)</span></label>
+          <input id="mentoring-email" type="email" required>
         </div>
 
         <div class="input-wrapper">
-          <label for="">Senha <span>(minimo de 6 caracteres)</span></label>
-          <input type="password">
+          <label for="mentoring-password">Senha <span>(minimo de 6 caracteres)</span></label>
+          <input id="mentoring-password" type="password" required minlength="6">
         </div>
       </fieldset>
 
@@ -55,8 +55,8 @@
           informações do mentor
         </legend>
         <div class="input-wrapper-info">
-          <label for="">Nome do seu mentor <span>(só o primeiro nome)</span></label>
-          <input type="text">
+          <label for="mentoring-name-mentor">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+          <input id="mentoring-name-mentor" type="text" required>
         </div>
       </fieldset>
 
@@ -69,19 +69,20 @@
 
           <div class="input-wrapper">
             <p>Primeira mentoria</p>
-            <label for="">Data <span>(DD/MM/AAAA)</span></label>
-            <input id="input-mentoring" type="date">
+            <!-- possivel error no futuro com esse ID (usei ele no css e não sei se vai funcionar no backend)  tem dois com o mesmo nome id, deve ser por isso que apareceu o error no output-->
+            <label for="input-mentoring">Data <span>(DD/MM/AAAA)</span></label>
+            <input id="input-mentoring" type="date" required>
           </div>
 
           <div class="time">            
             <div class="input-wrapper">
-              <label for="">Das</label>
-              <input type="time">
+              <label for="mentoring-begin">Das</label>
+              <input id="mentoring-begin" type="time" required>
             </div>
 
             <div class="input-wrapper">
-              <label for="">Até</label>
-              <input type="time">
+              <label for="mentoring-end">Até</label>
+              <input id="mentoring-end" type="time" required>
             </div>
           </div>
 
@@ -91,19 +92,19 @@
 
           <div class="input-wrapper">
             <p>Segunda mentoria</p>
-            <label for="">Data <span>(DD/MM/AAAA)</span></label>
-            <input id="input-mentoring" type="date">
+            <label for="input-mentoring">Data <span>(DD/MM/AAAA)</span></label>
+            <input id="input-mentoring" type="date" required>
           </div>
 
           <div class="time">            
             <div class="input-wrapper">
-              <label for="">Das</label>
-              <input type="time">
+              <label for="mentoring-begin-2">Das</label>
+              <input id="mentoring-begin-2" type="time" required>
             </div>
 
             <div class="input-wrapper">
-              <label for="">Até</label>
-              <input type="time">
+              <label for="mentoring-end-2">Até</label>
+              <input id="mentoring-end-2" type="time" required>
             </div>
           </div>
 
@@ -112,7 +113,7 @@
     </form>
 
     <footer>
-      <input class="button"type="submit" value="SALVAR">
+      <input class="button"type="submit" form="my-form-mentor" value="SALVAR">
       </input>
     </footer>
   </div>
