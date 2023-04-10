@@ -109,12 +109,21 @@ fieldset input {
   width: 300px;
 }
 
+/* cada span estava com uma medida diferente margin-left (medida quebrada) coloquei todos 10px */
+span {
+  font-size: 12px;
+  line-height: 20px;
+  color: #c1bccc;
+  margin-left: 10px;
+}
+
 .input-wrapper input {
   width: 100%;
 }
-
+/*não pediu o padding mas eu coloquei*/
 input {
-  margin: 16px 0 8px 0;
+  margin: 8px 0 16px 0;
+  padding: 10px;
 }
 
 .legend-2 {
@@ -136,6 +145,12 @@ input {
   align-items: flex-end;
 }
 
+.col-mentoring-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
 .time {
   display: flex;
   gap: 10px;
@@ -154,6 +169,16 @@ input {
   width: 300px;
 }
 
+.col-mentoring .input-wrapper p,
+.col-mentoring-2 .input-wrapper p {
+  font-family: "Staatliches";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  color: #535971;
+}
+
 .col-mentoring label {
   margin-top: 8px;
 }
@@ -167,6 +192,18 @@ footer {
   flex-direction: column;
 }
 
-footer button {
+footer .button {
   height: 55px;
+  background: #ff5374;
+  border-radius: 20px;
+  border: none;
+  color: #ffffff;
+  margin: 0;
+  font-size: 20px;
+  line-height: 26px;
+  font-family: "Staatliches";
+}
+
+.button:hover {
+  background: #c61f3f;
 }
