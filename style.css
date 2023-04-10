@@ -128,3 +128,45 @@ input {
 .input-wrapper-info input {
   width: 100%;
 }
+
+.col-mentoring {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  align-items: flex-end;
+}
+
+.time {
+  display: flex;
+  gap: 10px;
+}
+.time input {
+  width: 140px;
+  height: 56px;
+}
+
+.time .input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#input-mentoring {
+  width: 300px;
+}
+
+.col-mentoring label {
+  margin-top: 8px;
+}
+
+footer {
+  background: #535971;
+  border-radius: 0px 0px 20px 20px;
+  padding: 52px 71px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer button {
+  height: 55px;
+}
